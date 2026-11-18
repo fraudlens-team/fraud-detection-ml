@@ -221,3 +221,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# --- FraudLens project rules ---
+# Dataset: never commit it
+data/*
+!data/README.md
+creditcard.csv
+*.zip
+
+# Credentials
+kaggle.json
+
+# OS clutter
+.DS_Store
+
+# Models: ignored by default, except the final selected model
+*.pkl
+*.joblib
+!models/best_model.joblib
